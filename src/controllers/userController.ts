@@ -12,7 +12,7 @@ import upload from "../middlewares/multerMiddleware";
 import { IGetUserAuthInfoRequest } from "../middlewares/definitionfile";
 
 const saltRounds = 10;
-const jwtSecret = process.env.JWT_SECRET!;
+const jwtSecret = process.env.JWT_SECRET;
 
 // Validation schema for user registration
 const registerSchema = Joi.object({
